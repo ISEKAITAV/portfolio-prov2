@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio của Trần Anh Vũ - Full-stack Developer tương lai">
+    <title>Portfolio - Trần Anh Vũ</title>
+    <script>
+        document.documentElement.classList.add('js');
+        try {
+            var t = localStorage.getItem('theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" aria-current="page">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="projects.html">Dự án</a>
+        <a href="contact.html">Liên hệ</a>
+        <button id="theme-toggle" type="button" aria-pressed="false">🌙 Tối</button>
+    </nav>
+
+    <header>
+        <img src="images/avatar.jpg" alt="Ảnh chân dung Trần Anh Vũ" class="avatar">
+        <h1>Xin chào! Mình là Trần Anh Vũ</h1>
+        <p>Full-stack Developer tương lai</p>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="reveal">Dự án nổi bật</h2>
+            <div class="card reveal">Todo List JS</div>
+            <div class="card reveal">Weather App</div>
+            <div class="card reveal">Portfolio này :)</div>
+            <p class="reveal"><a href="projects.html">Xem tất cả dự án</a></p>
+        </section>
+    </main>
+    <footer>&copy; 2026 Trần Anh Vũ</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

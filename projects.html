@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio của Trần Anh Vũ - Full-stack Developer tương lai">
+    <title>Dự án - Trần Anh Vũ</title>
+    <script>
+        document.documentElement.classList.add('js');
+        try {
+            var t = localStorage.getItem('theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html">Giới thiệu</a>
+        <a href="projects.html" aria-current="page">Dự án</a>
+        <a href="contact.html">Liên hệ</a>
+        <button id="theme-toggle" type="button" aria-pressed="false">🌙 Tối</button>
+    </nav>
+
+    <header>
+        <h1>Dự án của mình</h1>
+        <p>Một số sản phẩm mình đã làm trong quá trình học</p>
+    </header>
+
+    <main>
+        <section>
+            <div class="grid">
+            <article class="card reveal">
+                <h3>Todo List JS</h3>
+                <p>Ứng dụng quản lý công việc bằng JavaScript thuần, thêm, xóa và đánh dấu hoàn thành.</p>
+                <ul class="tags"><li>HTML</li><li>CSS</li><li>JavaScript</li></ul>
+                <a href="https://github.com/ISEKAITAV" target="_blank" rel="noopener">Xem trên GitHub</a>
+            </article>
+            <article class="card reveal">
+                <h3>Weather App</h3>
+                <p>Tra cứu thời tiết theo thành phố bằng API thời tiết công khai.</p>
+                <ul class="tags"><li>JavaScript</li><li>API</li></ul>
+                <a href="https://github.com/ISEKAITAV" target="_blank" rel="noopener">Xem trên GitHub</a>
+            </article>
+            <article class="card reveal">
+                <h3>Portfolio này</h3>
+                <p>Website cá nhân responsive, có dark mode và animation khi scroll.</p>
+                <ul class="tags"><li>CSS Grid</li><li>Intersection Observer</li></ul>
+                <a href="https://github.com/ISEKAITAV" target="_blank" rel="noopener">Xem trên GitHub</a>
+            </article>
+            <article class="card reveal">
+                <h3>Trang CV</h3>
+                <p>Trang CV một trang, upload lên hosting bằng FTP.</p>
+                <ul class="tags"><li>HTML</li><li>CSS</li><li>FTP</li></ul>
+                <a href="https://github.com/ISEKAITAV" target="_blank" rel="noopener">Xem trên GitHub</a>
+            </article>
+            <article class="card reveal">
+                <h3>Landing page</h3>
+                <p>Trang giới thiệu sản phẩm theo hướng mobile first.</p>
+                <ul class="tags"><li>Responsive</li><li>Flexbox</li></ul>
+                <a href="https://github.com/ISEKAITAV" target="_blank" rel="noopener">Xem trên GitHub</a>
+            </article>
+            <article class="card reveal">
+                <h3>Dự án sắp tới</h3>
+                <p>Ứng dụng full-stack đầu tiên với Node.js và cơ sở dữ liệu.</p>
+                <ul class="tags"><li>Node.js</li><li>SQL</li></ul>
+                <a href="https://github.com/ISEKAITAV" target="_blank" rel="noopener">Xem trên GitHub</a>
+            </article>
+            </div>
+        </section>
+    </main>
+    <footer>&copy; 2026 Trần Anh Vũ</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

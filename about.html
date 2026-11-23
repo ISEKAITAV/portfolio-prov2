@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portfolio của Trần Anh Vũ - Full-stack Developer tương lai">
+    <title>Giới thiệu - Trần Anh Vũ</title>
+    <script>
+        document.documentElement.classList.add('js');
+        try {
+            var t = localStorage.getItem('theme') ||
+                (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
+            document.documentElement.setAttribute('data-theme', t);
+        } catch (e) {}
+    </script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html">Trang chủ</a>
+        <a href="about.html" aria-current="page">Giới thiệu</a>
+        <a href="projects.html">Dự án</a>
+        <a href="contact.html">Liên hệ</a>
+        <button id="theme-toggle" type="button" aria-pressed="false">🌙 Tối</button>
+    </nav>
+
+    <header>
+        <img src="images/avatar.jpg" alt="Ảnh chân dung Trần Anh Vũ" class="avatar">
+        <h1>Giới thiệu về mình</h1>
+        <p>Sinh viên đang học lập trình web</p>
+    </header>
+
+    <main>
+        <section>
+            <h2 class="reveal">Về mình</h2>
+            <div class="card reveal">
+                Mình là Trần Anh Vũ, đang học lập trình web và muốn trở thành Full-stack Developer.
+                Mình thích xây dựng những sản phẩm nhỏ nhưng hữu ích.
+            </div>
+
+            <h2 class="reveal">Kỹ năng</h2>
+            <div class="card reveal">
+                <ul>
+                    <li>HTML, CSS (Grid, Flexbox), JavaScript</li>
+                    <li>Git và GitHub</li>
+                    <li>Deploy: GitHub Pages, Netlify, Vercel, Cloudflare</li>
+                </ul>
+            </div>
+        </section>
+    </main>
+    <footer>&copy; 2026 Trần Anh Vũ</footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
